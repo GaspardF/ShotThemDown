@@ -13,6 +13,33 @@ function update()
     if (keyboard.pressed("down"))
         player1.decelerate(moveDistance);
 
+    var x = baddy1.graphic.position.x + WIDTH / 2;
+    var y = baddy1.graphic.position.y + HEIGHT / 2;
+    /*if ( x < 0 )
+        player1.graphic.position.x -= x;
+    if ( y < 0 )
+        player1.graphic.position.y -= y;
+    if ( y > HEIGHT )
+        player1.graphic.position.y -= y - HEIGHT;*/
+    if (x > WIDTH)
+    {
+      //player1.dead();
+      baddy1.direction = -2;
+    }
+    if (x < 0)
+    {
+      baddy1.direction = 0;
+    }
+    if (y > HEIGHT)
+    {
+      //player1.dead();
+      baddy1.direction = -2;
+    }
+    if (y < 0)
+    {
+      baddy1.direction = 2;
+    }
+    baddy1.accelerate(moveDistance);
     player1.move();
     baddy1.move();
     dead_baddy();

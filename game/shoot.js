@@ -36,6 +36,7 @@ function collisions()
 {
     bullet_collision();
     player_collision();
+    //baddy_collision();
     player_falling();
 }
 
@@ -69,6 +70,23 @@ function player_collision()
         player1.graphic.position.y -= y;
     if ( y > HEIGHT )
         player1.graphic.position.y -= y - HEIGHT;
+
+}
+
+function baddy_collision()
+{
+    //collision between player and walls
+    var x = baddy1.graphic.position.x + WIDTH / 2;
+    var y = baddy1.graphic.position.y + HEIGHT / 2;
+
+    if ( x > WIDTH )
+        baddy1.graphic.position.x -= x - WIDTH;
+    if ( x < 0 )
+        baddy1.graphic.position.x -= x;
+    if ( y < 0 )
+        baddy1.graphic.position.y -= y;
+    if ( y > HEIGHT )
+        baddy1.graphic.position.y -= y - HEIGHT;
 
 }
 

@@ -5,7 +5,7 @@ var Baddy = function(name, color, position, direction) {
     this.life = 3;
     this.bullets = new Array();
     this.direction = direction;
-    this.speed = 0;
+    this.speed = 300000;
 
     this.material = new THREE.MeshLambertMaterial({
         color: color,
