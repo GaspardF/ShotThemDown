@@ -22,5 +22,6 @@ A video game with three.js
 - [X] : As a user, I want to see ennemy
 - [X] : As a user, I want to destroy ennemy when I shot them
 - [X] : As a ennemy, I want to move on one axe
+- [X] : As a ennemy, I can kill the player, which reset the game
 - [ ] : As a user, I want to decrease my life when I am touch by an ennemy
 - [ ] : As a user, I want to decrease my life when I fall

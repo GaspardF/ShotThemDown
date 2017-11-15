@@ -23,6 +23,10 @@ var Baddy = function(name, color, position, direction) {
     this.graphic = new THREE.Mesh(sphere, this.material);
     this.graphic.position.z = 6;
     this.graphic.rotateOnAxis(new THREE.Vector3(0,0,1), this.direction);
+
+
+    this.graphic.position.x = 50;
+    this.graphic.position.y = 50;
 };
 
 Baddy.prototype.accelerate = function (distance) {
