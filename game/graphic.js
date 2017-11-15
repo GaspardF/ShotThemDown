@@ -28,7 +28,7 @@ function init()
     player1 = new Player("player1", 0xffff00, new THREE.Vector2(50, 0), 0);
     scene.add(player1.graphic);
 
-    baddy1 = new Baddy("baddy1", 0xff00ff, new THREE.Vector2(-30, -30), 0);
+    baddy1 = new Baddy("baddy1", 0xff00ff, new THREE.Vector2(50, 0), 0);
     scene.add(baddy1.graphic);
 
     light1 = new Light("sun", 0xffffff, "0,0,340");
