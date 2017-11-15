@@ -14,5 +14,6 @@ function update()
         player1.decelerate(moveDistance);
 
     player1.move();
+    baddy1.move();
     controls.update();
 }
